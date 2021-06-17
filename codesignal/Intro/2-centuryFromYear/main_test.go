@@ -2,10 +2,10 @@ package main
 
 import "testing"
 
-func tests(t *testing.T) {
+func Test(t *testing.T) {
 	cases := [][]int{
 		{1905, 20},
-		{1700, 70},
+		{1700, 17},
 		{1988, 20},
 		{2000, 20},
 		{2001, 21},
@@ -18,7 +18,7 @@ func tests(t *testing.T) {
 	for _, c := range cases {
 		res := centuryFromYear(c[0])
 		if res != c[1] {
-			t.Errorf("Expected %d, but received %d", c[1], res)
+			t.Errorf("\nInput:  %d\nExpected %d, but received %d", c[0], c[1], res)
 		}
 	}
 }
