@@ -15,6 +15,8 @@ lengthLoop:
 	return 1001
 }
 
+// Challenge:
+// https://app.codesignal.com/arcade/intro/level-5/XC9Q2DhRRKQrfLhb5
 func main() {
 	input := []int{5, 3, 6, 7, 9}
 	fmt.Println(avoidObstacles(input)) // Should print 4
