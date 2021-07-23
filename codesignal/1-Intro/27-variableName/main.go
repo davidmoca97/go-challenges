@@ -6,11 +6,7 @@ import (
 )
 
 func variableName(name string) bool {
-	match := regexp.MustCompile("(?i)^[a-z_][a-z0-9_]*$").MatchString(name)
-	if match {
-		return true
-	}
-	return false
+	return regexp.MustCompile("(?i)^[a-z_][a-z0-9_]*$").MatchString(name)
 }
 
 // Chanllenge:
