@@ -37,5 +37,5 @@ func chessBoardCellColor(cell1 string, cell2 string) bool {
 // Challenge:
 // https://app.codesignal.com/arcade/intro/level-6/t97bpjfrMDZH8GJhi
 func main() {
-	fmt.Println(chessBoardCellColor("A1", "C3")) //Should return true
+	fmt.Println(chessBoardCellColor("A1", "C3")) //Should print true
 }
