@@ -6,9 +6,7 @@ import (
 )
 
 func firstDigit(inputString string) string {
-	regex := regexp.MustCompile(`\d`)
-	match := regex.Find([]byte(inputString))
-	return string(match)
+	return regexp.MustCompile(`\d`).FindString(inputString)
 }
 
 // Challenge
