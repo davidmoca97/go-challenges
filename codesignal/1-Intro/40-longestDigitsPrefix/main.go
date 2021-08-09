@@ -7,13 +7,10 @@ import (
 
 func longestDigitsPrefix(inputString string) string {
 	matches := regexp.MustCompile(`^\d+`).FindAllString(inputString, -1)
-	longest := ""
-	for _, match := range matches {
-		if len(match) > len(longest) {
-			longest = match
-		}
+	if len(matches) == 0 {
+		return ""
 	}
-	return longest
+	return matches[0]
 }
 
 // Challenge:
