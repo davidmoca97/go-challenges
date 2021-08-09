@@ -2,18 +2,18 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 )
 
 func digitDegree(n int) int {
 	var times int
 	for n > 9 {
 		times++
-		str := strconv.Itoa(n)
-		var newNumber int
-		for _, digitStr := range str {
-			digit, _ := strconv.Atoi(string(digitStr))
+		copyOfN := n
+		var newNumber = 0
+		for copyOfN > 0 {
+			digit := copyOfN % 10
 			newNumber += digit
+			copyOfN = copyOfN / 10
 		}
 		n = newNumber
 	}
