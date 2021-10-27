@@ -29,5 +29,6 @@ func breakingRecords(scores []int32) []int32 {
 // Challenge:
 // https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 func main() {
+	// Should print [2, 4]
 	fmt.Println(breakingRecords([]int32{10, 5, 20, 20, 4, 5, 2, 25, 1}))
 }

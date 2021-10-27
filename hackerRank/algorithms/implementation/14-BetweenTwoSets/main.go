@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func MCD(a, b int32) int32 {
 	for b > 0 {
 		a, b = b, a%b
@@ -42,8 +44,6 @@ func MCMSlice(s []int32) int32 {
  *  2. INTEGER_ARRAY b
  */
 
-// Challenge:
-// https://www.hackerrank.com/challenges/between-two-sets/problem
 func getTotalX(a []int32, b []int32) int32 {
 	// Write your code here
 	mcm := MCMSlice(a)
@@ -56,4 +56,11 @@ func getTotalX(a []int32, b []int32) int32 {
 		}
 	}
 	return count
+}
+
+// Challenge:
+// https://www.hackerrank.com/challenges/between-two-sets/problem
+func main() {
+	// Should print 2
+	fmt.Println(getTotalX([]int32{2, 4}, []int32{24, 36}))
 }

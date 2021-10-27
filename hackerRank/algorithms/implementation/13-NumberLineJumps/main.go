@@ -2,9 +2,6 @@ package main
 
 import "fmt"
 
-// Challenge:
-// https://www.hackerrank.com/challenges/kangaroo/problem
-
 /*
  eq1 = x(k1JumpRate) + k1StartPoint; eq2 = x(k2JumpRate) + k2StartPoint
 
@@ -26,6 +23,8 @@ func kangaroo(k1StartPoint int32, k1JumpRate int32, k2StartPoint int32, k2JumpRa
 	return "NO"
 }
 
+// Challenge:
+// https://www.hackerrank.com/challenges/kangaroo/problem
 func main() {
 	fmt.Println(kangaroo(0, 3, 4, 2)) // Should print YES
 	fmt.Println(kangaroo(0, 2, 5, 3)) // Should print NO
