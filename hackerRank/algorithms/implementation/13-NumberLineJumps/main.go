@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// Challenge:
+// https://www.hackerrank.com/challenges/kangaroo/problem
+
 /*
  eq1 = x(k1JumpRate) + k1StartPoint; eq2 = x(k2JumpRate) + k2StartPoint
 
